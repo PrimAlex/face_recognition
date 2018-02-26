@@ -305,7 +305,7 @@ root = Tk()
 root.title('Распознавание лиц. Проектная работа ЦРР')
 root.geometry('1220x735+10+10') # ширина=500, высота=400, x=300, y=200
 root.resizable(True, True) # размер окна может быть изменён только по горизонтали
-root.iconbitmap(default="../FACE/img/cdr.ico")
+root.iconbitmap(default="../face_recognition/img/cdr.ico")
 
 frame1 = Frame(root)
 frame1.grid(row=0, column=0,  sticky=(N))
@@ -368,7 +368,7 @@ listbox_faces.config(selectmode=MULTIPLE)
 #                                                                                       sticky=(N, W, E, S))
 # #but_del = Button(frame5, text='Удалить', command=lambda i=person: onDel(i)).grid(row=3, column=0, sticky=(N, W, E, S))
 
-img = ImageTk.PhotoImage(Image.open('../FACE/img/present.png'))
+img = ImageTk.PhotoImage(Image.open('../face_recognition/img/present.png'))
 
 panel = Label(frame6, image = img, width= 980, height= 675)
 panel.pack(side = "bottom", fill = "both", expand = "yes")
