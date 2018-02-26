@@ -59,7 +59,7 @@ def del_selected(self):
 def OnSelect(event):
     global person, selected_persone, page_win_person_main, present
     #page_win_person_main = 0
-    print("select persone")
+    print("select person")
 
     #print("click")
     # selections = listbox.curselection()  # tuple of digit-string(s), aTupleOfSTRINGs, where digit-string(s) range from { 0, 1, .., N-1 }
@@ -348,9 +348,9 @@ listbox.bind('<Button-3>', OnSelect2)
 
 
 
-e_name.grid(row=0, column=1, padx=20)
-l_name.grid(row=0, column=0, padx=20)
-but_save.grid(row=0, column=2, padx=20)
+# e_name.grid(row=0, column=1, padx=20)
+# l_name.grid(row=0, column=0, padx=20)
+# but_save.grid(row=0, column=2, padx=20)
 
 
 
